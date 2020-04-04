@@ -44,6 +44,7 @@ header .navs a {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0 365px;
+  margin: 5px auto;
 }
 .start_section .drop_mob {
   display: none;
@@ -77,12 +78,11 @@ header .navs a {
     background-color: transparent;
     border-color: transparent;
     font-size: 30px;
-    border: none;
   }
   .start_section .dropa {
-    left: -100px;
     border: none;
     padding: 0;
+    transform: translate3d(-60px, 80px, 0px);
   }
 }
 .head_text {
@@ -191,6 +191,9 @@ header .navs a {
 /*styles for galery section*/
 .section_galery {
   max-width: 1872px;
+  padding: 0 50px;
+}
+.section_galery .galery {
   margin: 0 auto;
 }
 .section_galery .redb {
@@ -204,7 +207,6 @@ header .navs a {
 }
 .section_galery .coloum {
   padding: 0;
-  border: 1px solid #ffffff;
 }
 .section_galery .la {
   position: relative;
@@ -212,7 +214,7 @@ header .navs a {
   height: 365px;
   width: 100%;
   text-decoration: none;
-  margin: 0 auto;
+  margin: 0 auto ;
 }
 .section_galery .la:hover .redb {
   position: absolute;
@@ -497,7 +499,7 @@ header .navs a {
   }
 }
 .ready_text {
-  padding: 156px 0;
+  margin: 70px 0;
   text-align: center;
 }
 .ready_text h2 {
