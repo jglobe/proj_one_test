@@ -154,6 +154,7 @@ header .navs a {
 .features_section {
   padding: 120px 365px;
   text-align: center;
+  margin: 0 auto;
 }
 .features_section img {
   margin: 10px;
@@ -188,6 +189,10 @@ header .navs a {
   }
 }
 /*styles for galery section*/
+.section_galery {
+  max-width: 1872px;
+  margin: 0 auto;
+}
 .section_galery .redb {
   padding-top: 140px;
   display: none;
