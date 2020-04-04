@@ -69,7 +69,7 @@ header .navs a {
   }
   .start_section .drop_mob {
     display: block;
-    padding: 15px 0px;
+    padding: 15px;
     margin: 5px;
     border-radius: 0;
     text-transform: uppercase;
@@ -421,12 +421,12 @@ header .navs a {
     height: 200px;
     max-width: 200px;
   }
-}
-.slider_section .text_slide h5 {
-  font-size: 0.6rem;
-}
-.slider_section .text_slide p {
-  font-size: 0.4rem;
+  .slider_section .text_slide h5 {
+    font-size: 0.6rem;
+  }
+  .slider_section .text_slide p {
+    font-size: 0.4rem;
+  }
 }
 .slider_section img {
   height: 500px;
