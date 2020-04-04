@@ -61,7 +61,7 @@ header{
         }
         .drop_mob {
             display: block;
-            padding: 15px;
+            padding: 15px 0px;
             margin: 5px;
             border-radius:0;
             text-transform: uppercase;
@@ -69,6 +69,12 @@ header{
             background-color: transparent;
             border-color: transparent;
             font-size: 30px;
+            border: none;
+        }
+        .dropa {
+            left: -100px;
+            border: none;
+            padding: 0;
         }
     }
 }
@@ -318,40 +324,114 @@ header{
         }
     }
 }
-/* styles for slider section*/
+/*slider test*/
 .slider_section {
-    max-width: 1900px;
+    .slide_block {
+        display: flex;
+        justify-content: space-between;
+    }
+    .text_slide {
+        position: relative;
+        display: block;
+        color: @second_color;
+        width: 950px;
+        padding: 90px 50px 50px;
+        background-color: @slide_bg;
+        h5 {
+            font-family:@slider_font, sans-serif;
+            font-style: italic;
+            font-size: 2rem;
+            font-weight: 400; 
+        }
+        p {
+            font-family: @bottom_font;
+            font-size: 1.2rem;
+
+        }
+        @media (max-width:1400px) {
+            height: 450px;
+            max-width: 700px;
+        }
+        @media (max-width:1100px) {
+            height: 350px;
+            max-width: 550px;
+            padding: 35px;
+            h5 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+        @media (max-width:768px) {
+            height: 300px;
+            max-width: 384px;
+            padding: 20px;
+            h5 {
+                font-size: 1.2rem;
+            }
+            p {
+                font-size: 0.8rem;
+            }
+        }
+        @media (max-width:576px) {
+            height: 250px;
+            max-width: 288px;
+            padding: 25px 15px;
+            h5 {
+                font-size: 0.8rem;
+            }
+            p {
+                font-size: 0.5rem;
+            }
+        }
+        @media (max-width:400px) {
+            height: 200px;
+            max-width: 200px;
+        }
+        h5 {
+            font-size: 0.6rem;
+        }
+        p {
+            font-size: 0.4rem;
+        }
+    }
+    img {
+        height: 500px;
+        max-width: 950px;
+        margin: 0 auto;
+        @media (max-width:1400px) {
+            height: 450px;
+            max-width: 700px;
+        }
+        @media (max-width:1100px) {
+            height: 350px;
+            max-width: 550px;
+        }
+        @media (max-width:768px) {
+            height: 300px;
+            max-width: 384px;
+        }
+        @media (max-width:576px) {
+            height: 250px;
+            max-width: 288px;
+        }
+        @media (max-width:400px) {
+            height: 200px;
+            max-width: 200px;
+        }
+    }
     .tap_index {
         border-radius: 50%;
         width: 12px;
         height: 10px;
     }
-    .slide_block {
-        display: flex;
-        align-items: stretch;
-        height: 500px;
-       
-    }
-    .text_slide {
-        background-color:@slide_bg;
-        color: @second_color;
-        min-width: 50%;
-        text-align: start;
-        padding: 110px 85px;
-        h5 {
-            font-family:@slider_font, sans-serif;
-            font-style: italic;
-            font-size: 26px;
-            font-weight: 400; 
-        }
-    }
     .indx {
-        
         position: absolute;
-        left: 900px;
-        top: 400px;
-    }    
+        left: 50%;
+    }
 }
+
 
 /*styles for ready section*/
 .ready_section {
@@ -372,7 +452,7 @@ header{
     h2 {
         font-family: @bottom_font, sans-serif;
         font-weight: 300;
-        font-size: 4.8rem; 
+        font-size: 2.8rem; 
         color: @ready_font_col;
         margin-bottom: 40px;
         @media (max-width:1400px) {
@@ -388,6 +468,7 @@ header{
     p {
         font-family: @bottom_font, sans-serif;
         font-size: 1.5rem;
+        font-weight: bold;
         color: @features_title_color;
         margin-bottom: 80px;
         text-transform: uppercase;
